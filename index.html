@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus on Today</title>
+    <!-- poppins google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1 class="heading">Focus on <span>Today</span></h1>
+      <div class="app-container">
+        <h2 class="subheading">
+          Today <img class="sun-image" src="/images/Sun.svg" alt="sun" />
+        </h2>
+        <p class="progress-label">Raise the bar by completing your goals!</p>
+        <div class="progress-bar">
+          <div class="progress-value">2/3 completed</div>
+          <p class="error-message">Please set all 3 goals</p>
+        </div>
+        <div class="goal-container ">
+          <div class="custom-checkbox"><img src="./images/checkbox.svg" alt="" class="tick-task"></div>
+          <input type="text" class="goal-input" placeholder="Add new goal... ">
+        </div>
+        <div class="goal-container">
+          <div class="custom-checkbox"><img src="./images/checkbox.svg" alt="" class="tick-task"></div>
+          <input type="text" class="goal-input" placeholder="Add new goal... ">
+        </div>
+        <div class="goal-container">
+          <div class="custom-checkbox"><img src="./images/checkbox.svg" alt="" class="tick-task"></div>
+          <input type="text" class="goal-input" placeholder="Add new goal... ">
+        </div>
+        <p class="quote">"Move one step ahead, today!"</p>
+        <p class="author">Made with 🧡 by<a href="http://github.com/Bharat-Dua" target="_blank" class="github-link"> Bharat Dua</a></a></p>
+      </div>
+    </main>
+  </body>
 </html>
