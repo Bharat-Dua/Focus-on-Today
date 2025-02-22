@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome for toggle icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
@@ -18,28 +25,60 @@
     <main>
       <h1 class="heading">Focus on <span>Today</span></h1>
       <div class="app-container">
-        <h2 class="subheading">
-          Today <img class="sun-image" src="/images/Sun.svg" alt="sun" />
-        </h2>
+        <div class="toggle">
+          <h2 class="subheading">
+            Today <img class="sun-image" src="/images/Sun.svg" alt="sun" />
+          </h2>
+          <div class="toggle-dark-mode"><i class="fas fa-moon"></i></div>
+        </div>
         <p class="progress-label">Raise the bar by completing your goals!</p>
         <div class="progress-bar">
           <div class="progress-value"><span>0/3 completed</span></div>
           <p class="error-message">Please set all 3 goals</p>
         </div>
-        <div class="goal-container ">
-          <div class="custom-checkbox"><img src="./images/checkbox.svg" alt="" class="tick-task"></div>
-          <input type="text" class="goal-input" placeholder="Add new goal... ">
+        <div class="goal-container">
+          <div class="custom-checkbox">
+            <img src="./images/checkbox.svg" alt="" class="tick-task" />
+          </div>
+          <input
+            type="text"
+            id="first"
+            class="goal-input"
+            placeholder="Add new goal... "
+          />
         </div>
         <div class="goal-container">
-          <div class="custom-checkbox"><img src="./images/checkbox.svg" alt="" class="tick-task"></div>
-          <input type="text" class="goal-input" placeholder="Add new goal... ">
+          <div class="custom-checkbox">
+            <img src="./images/checkbox.svg" alt="" class="tick-task" />
+          </div>
+          <input
+            type="text"
+            id="second"
+            class="goal-input"
+            placeholder="Add new goal... "
+          />
         </div>
         <div class="goal-container">
-          <div class="custom-checkbox"><img src="./images/checkbox.svg" alt="" class="tick-task"></div>
-          <input type="text" class="goal-input" placeholder="Add new goal... ">
+          <div class="custom-checkbox">
+            <img src="./images/checkbox.svg" alt="" class="tick-task" />
+          </div>
+          <input
+            type="text"
+            id="third"
+            class="goal-input"
+            placeholder="Add new goal... "
+          />
         </div>
         <p class="quote">"Move one step ahead, today!"</p>
-        <p class="author">Made with 🧡 by<a href="http://github.com/Bharat-Dua" target="_blank" class="github-link"> Bharat Dua</a></a></p>
+        <p class="author">
+          Made with 🧡 by<a
+            href="http://github.com/Bharat-Dua"
+            target="_blank"
+            class="github-link"
+          >
+            Bharat Dua</a
+          >
+        </p>
       </div>
     </main>
   </body>
